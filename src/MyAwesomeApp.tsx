@@ -1,6 +1,6 @@
-import React, { type CSSProperties } from "react";
+import { type CSSProperties } from "react";
 
-const firsName = "Leadro";
+const firsName = " Leandro ";
 const lastName = "Martello";
 
 const favoriteGames = ["Mafia", "Duke Nukem", "Assasins Creed"];
@@ -21,7 +21,7 @@ const address = {
 const MyAwesomeApp = () => {
   return (
     <>
-      <h1>{firsName}</h1>
+      <h1 data-testid="first-name-title">{firsName}</h1>
       <h3>{lastName}</h3>
 
       <p>{favoriteGames.join(", ")}</p>
