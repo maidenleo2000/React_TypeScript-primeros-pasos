@@ -32,4 +32,14 @@ describe("MyAwesomeApp", () => {
     console.log(h1.innerHTML);
     expect(h1?.innerHTML).toContain("Leandro");
   });
+
+  test("should match snapshot", () => {
+    const { container } = render(<MyAwesomeApp />);
+    expect(container).toMatchSnapshot();
+  });
+
+  test("should match snapshot", () => {
+    render(<MyAwesomeApp />);
+    expect(screen.getByTestId("div-app")).toMatchSnapshot();
+  });
 });
